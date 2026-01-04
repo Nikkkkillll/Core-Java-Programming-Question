@@ -19,6 +19,8 @@ public class PrintMultiple {
 		int num = scanner.nextInt();
 
 		printMultiple(num);
+		
+		scanner.close();
 	}
 
 }

@@ -1,6 +1,6 @@
 package com.arithmeticproblem;
 
-import java.util.Scanner;
+
 
 public class PrintNumberInReverseOrder {
 
@@ -12,6 +12,8 @@ public class PrintNumberInReverseOrder {
 
 	public static void main(String[] args) {
 		printNumber(10);
+		
+
 	}
 
 }
