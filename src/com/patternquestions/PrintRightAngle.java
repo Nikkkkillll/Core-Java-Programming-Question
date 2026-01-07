@@ -9,10 +9,13 @@ import java.util.Scanner;
  * */
 public class PrintRightAngle {
 
-	static void startRightAngleTraingle(int num) {
-		for (int i = 0; i < num; i++) {
-			for (int j = 0; j < i; j++) {
-				System.out.print("* ");
+	static void starRightAngleTriangle(int num) {
+		for (int i = 1; i <= num; i++) {
+			for (int j = num - i; j > 0; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 1; k <= i; k++) {
+				System.out.print("*");
 			}
 			System.out.println();
 		}
@@ -22,9 +25,7 @@ public class PrintRightAngle {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the length : ");
 		int num = scanner.nextInt();
-		startRightAngleTraingle(num);
-
+		starRightAngleTriangle(num);
 		scanner.close();
 	}
-
 }
